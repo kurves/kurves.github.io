@@ -3,128 +3,112 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Build Hub - Connecting Clients with Construction Professionals</title>
-
+    <title>Build Hub - Connecting Clients and Professionals</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background: #000;
+            color: #fff;
         }
         header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 0;
+            background: linear-gradient(90deg, #0000ff, #800080);
+            padding: 20px;
             text-align: center;
+        }
+        header img {
+            max-width: 150px;
         }
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
+            padding: 20px;
         }
-        .showcase {
-            background: url('construction-bg.jpg') no-repeat center center/cover;
-            color: #fff;
-            height: 400px;
+        .hero {
             text-align: center;
-            padding-top: 100px;
+            margin-bottom: 20px;
         }
-        .showcase h1 {
-            font-size: 55px;
+        .hero h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+        .section {
+            margin: 40px 0;
+        }
+        .section h2 {
+            font-size: 2em;
+            color: #800080;
+        }
+        .section p {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+        .about, .project {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .about img, .project img {
+            max-width: 300px;
+            margin: 10px;
+        }
+        footer {
+            background: #000;
+            text-align: center;
+            padding: 20px;
+            color: #fff;
         }
         .btn {
-            display: inline-block;
+            background: #800080;
             color: #fff;
-            background: #e8491d;
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
+            font-weight: bold;
         }
-        section {
-            padding: 20px 0;
-        }
-        .content {
-            display: flex;
-            justify-content: space-between;
-        }
-        .content .box {
-            width: 30%;
-            padding: 20px;
-            background: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin: 10px 0;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
+        .btn:hover {
+            background: #0000ff;
         }
     </style>
 </head>
 <body>
-
-<header>
+    <header>
+        <img src="logo.png" alt="Build Hub Logo">
+    </header>
     <div class="container">
-        <img src="buildhub2.png" alt="logo" style="width:500px;height:600px;>
-        <h1>Build Hub</h1>
-        <p>Connecting Clients with Construction Professionals</p>
-    </div>
-</header>
-
-<div class="showcase">
-    <div class="container">
-        <h1>Welcome to Build Hub</h1>
-        <p>Your one-stop solution for all construction needs</p>
-        <a href="#about" class="btn">Learn More</a>
-    </div>
-</div>
-
-<section id="about">
-    <div class="container">
-        <h2>About Build Hub</h2>
-        <div class="content">
-            <div class="box">
-                <h3>What We Do</h3>
-                <p>Build Hub connects clients with experienced construction professionals to bring their projects to life. Whether you're looking to build a new home, renovate your office, or manage a large-scale construction project, we've got you covered.</p>
+        <div class="hero">
+            <h1>Welcome to Build Hub</h1>
+            <p>Connecting clients with construction professionals for seamless project management</p>
+        </div>
+        <div class="section">
+            <h2>About Build Hub</h2>
+            <div class="about">
+                <p>Build Hub is a revolutionary app designed to bridge the gap between clients and construction professionals. Our platform simplifies the process of finding, hiring, and managing construction projects, ensuring that both clients and professionals have the tools they need for success.</p>
+                <img src="about.jpg" alt="About Build Hub">
             </div>
-            <div class="box">
-                <h3>Our Mission</h3>
-                <p>Our mission is to simplify the construction process by providing a platform where clients can easily find and hire trusted professionals. We strive to ensure that every project is completed with the highest level of quality and satisfaction.</p>
+        </div>
+        <div class="section">
+            <h2>Meet the Developer</h2>
+            <div class="about">
+                <img src="developer.jpg" alt="Developer Picture">
+                <p>Hi, I'm [Your Name], the developer behind Build Hub. With a passion for technology and a background in construction management, I created Build Hub to solve the common challenges faced by clients and professionals in the construction industry. My goal is to streamline communication and project management to create a more efficient and productive environment for everyone involved.</p>
             </div>
-            <div class="box">
-                <h3>How It Works</h3>
-                <p>Clients can browse through profiles of construction professionals, read reviews, and view portfolios. Once they find the right fit, they can connect directly to discuss project details and get started.</p>
+        </div>
+        <div class="section">
+            <h2>Project Portfolio</h2>
+            <div class="project">
+                <img src="project1.jpg" alt="Project 1">
+                <img src="project2.jpg" alt="Project 2">
+                <img src="project3.jpg" alt="Project 3">
             </div>
         </div>
     </div>
-</section>
-
-<section id="developer">
-    <div class="container">
-        <h2>About the Developer</h2>
-        <p>Hi, I'm [Your Name], the developer behind Build Hub. With a passion for technology and a background in construction management, I created Build Hub to bridge the gap between clients and professionals in the construction industry. My goal is to leverage technology to make the construction process more transparent, efficient, and accessible for everyone.</p>
-        <a href="[Link to your portfolio or LinkedIn]" class="btn">View My Portfolio</a>
-    </div>
-</section>
-
-<section id="project">
-    <div class="container">
-        <h2>Check Out the App</h2>
-        <p>Explore Build Hub and see how it can transform your construction projects. Click the link below to access the deployed app and start your journey with us.</p>
-        <a href="[Link to deployed app]" class="btn">Go to Build Hub</a>
-    </div>
-</section>
-
-<footer>
-    <div class="container">
-        <p>&copy; 2024 Build Hub. All rights reserved.</p>
-    </div>
-</footer>
-
+    <footer>
+        <p>Ready to get started? <a href="https://yourappurl.com" class="btn">Visit Build Hub</a></p>
+        <p>&copy; 2024 Build Hub. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
